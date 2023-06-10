@@ -14,5 +14,8 @@ require('./bootstrap');
 
 require('./components/Example');
 require('./components/Header/Header');
+require('./components/Button/MenuButton');
+require('./components/Button/SubMenuButton');
+require('./components/MemberThumb/MemberThumb');
 
 require('./pages/Home');
