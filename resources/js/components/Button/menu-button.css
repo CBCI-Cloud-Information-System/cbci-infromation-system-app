@@ -1,0 +1,17 @@
+.menu-btn{
+  width: 48px;
+  height: 48px;
+
+  border-radius: 15px;
+  background-color: #F2D366;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+.menu-btn-icon{
+  color: #212121;
+  font-size: 30px;
+}

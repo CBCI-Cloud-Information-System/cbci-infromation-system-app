@@ -1,0 +1,10 @@
+.sub-menu-btn{
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #262626;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
