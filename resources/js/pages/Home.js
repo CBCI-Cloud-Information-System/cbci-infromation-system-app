@@ -6,6 +6,7 @@ import "./home.css";
 import MenuButton from '../components/Button/MenuButton';
 import SubMenuButton from '../components/Button/SubMenuButton';
 import MemberThumb from '../components/MemberThumb/MemberThumb';
+import Members from './Members';
 
 function Home() {
     return (
@@ -28,7 +29,8 @@ function Home() {
               </div>
             </div>
             <div className='main-cont'>
-              <MemberThumb></MemberThumb>
+              {/* <MemberThumb></MemberThumb> */}
+              <Members></Members>
             </div>
           </div>
         </>

@@ -17,5 +17,7 @@ require('./components/Header/Header');
 require('./components/Button/MenuButton');
 require('./components/Button/SubMenuButton');
 require('./components/MemberThumb/MemberThumb');
+require('./components/ExpandThumb/ExpandThumb');
 
 require('./pages/Home');
+require('./pages/Members');
