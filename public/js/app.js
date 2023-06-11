@@ -5277,10 +5277,31 @@ function Header() {
         src: _img_cbci_logo_png__WEBPACK_IMPORTED_MODULE_3__["default"]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "menu-selected",
       children: "Schedule"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       id: "header-nav",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+        className: "search-form",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+          type: "button",
+          className: "btn btn-primary btn-sm",
+          id: "search-btn",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            "class": "material-symbols-outlined",
+            children: "search"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+          type: "text",
+          placeholder: "Search"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+        id: "notification-btn",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+          "class": "material-symbols-outlined",
+          children: "notifications"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "my-account-wrapper",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "my-profile-img"
@@ -9945,7 +9966,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#main-nav{\r\n  display: flex;\r\n  align-items: center;\r\n  /* background-color: red; */\r\n  padding: 5px 10px;\r\n  /* border-bottom: 1px solid black; */\r\n}\r\n#logo-wrapper{\r\n  width: 300px;\r\n  /* background-color: blue; */\r\n}\r\n#header-nav{\r\n  flex: 1;\r\n  display: flex;\r\n  align-items: center;\r\n  height: 45px;\r\n  /* background-color: red; */\r\n\r\n  justify-content: flex-end;\r\n}\r\n#nav-logo{\r\n  height: 45px;\r\n}\r\n\r\n.my-account-wrapper{\r\n  display: flex;\r\n  align-items: center;\r\n  cursor: pointer;\r\n}\r\n\r\n.my-profile-img{\r\n  width: 40px;\r\n  height: 40px;\r\n  border-radius: 13px;\r\n  border: 1px solid #414141;\r\n  background-color: #212121;\r\n  margin-right: 10px;\r\n  cursor: pointer;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "#main-nav{\r\n  display: flex;\r\n  align-items: center;\r\n  /* background-color: red; */\r\n  padding: 5px 10px;\r\n  /* border-bottom: 1px solid black; */\r\n}\r\n#logo-wrapper{\r\n  width: 300px;\r\n  /* background-color: blue; */\r\n}\r\n#header-nav{\r\n  flex: 1;\r\n  display: flex;\r\n  align-items: center;\r\n  height: 45px;\r\n  /* background-color: red; */\r\n\r\n  justify-content: flex-end;\r\n}\r\n#nav-logo{\r\n  height: 45px;\r\n}\r\n\r\n.my-account-wrapper{\r\n  display: flex;\r\n  align-items: center;\r\n  cursor: pointer;\r\n}\r\n\r\n.my-profile-img{\r\n  width: 40px;\r\n  height: 40px;\r\n  border-radius: 13px;\r\n  border: 1px solid #414141;\r\n  background-color: #212121;\r\n  margin-right: 10px;\r\n  cursor: pointer;\r\n}\r\n\r\n.menu-selected{\r\n  font-size: 20px;\r\n  font-weight: bold;\r\n}\r\n\r\n#notification-btn{\r\n  background-color: transparent;\r\n  outline: none;\r\n  border: none;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin: 0 18px;\r\n  color: #D9D9D9;\r\n}\r\n\r\n.search-form {\r\n  flex: 0.5;\r\n  display:flex;\r\n  flex-direction:row;\r\n  \r\n  border:1px solid #373737;\r\n  /* padding:5px 5px 5px 15px; */\r\n\r\n  /* margin-right: 20px; */\r\n\r\n  border-radius: 12px;\r\n  height: 40px;\r\n  /* width: 280px; */\r\n  overflow: hidden;\r\n\r\n  background-color: #262626;\r\n\r\n  max-width: 300px;\r\n}\r\n\r\n.search-form input {\r\n  flex:2;\r\n  border:none;\r\n  background-color: transparent;\r\n  /* margin-left: 15px; */\r\n  color: #A6A6A6;\r\n}\r\n\r\n.search-form input:focus {\r\n  outline: none;\r\n}\r\n\r\n.search-form:focus-within{ \r\n  /* color: #495057;\r\n  background-color: #fff; */\r\n  border-color: #0069da;\r\n  outline: 0;\r\n  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);\r\n}\r\n\r\n#search-btn {\r\n  border-radius: 60px;\r\n  padding: 0 10px;\r\n  background-color: #252728;\r\n  color: #9c9c9c;\r\n  border: none;\r\n  display: flex;\r\n  align-items: center;\r\n  margin-left: 5px;\r\n}\r\n\r\n/* #search-btn:focus {\r\n  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);\r\n} */\r\n\r\n#search-btn:hover {\r\n  background-color: #2a2b2c;\r\n}\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
