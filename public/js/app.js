@@ -5317,9 +5317,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function MemberThumb(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "member-thumb"
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    className: "member-thumb",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "member-thumb-profile"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "member-thumb-info",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+        className: "member-thumb-name",
+        children: "Member Name"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+        className: "member-thumb-contact",
+        children: "09xxxxxxx"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "member-thumb-status",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+          className: "member-thumb-last-active",
+          children: "Last seen: 05/23/2023"
+        })
+      })]
+    })]
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MemberThumb);
@@ -9950,7 +9969,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".member-thumb{\r\n  max-width: 280px;\r\n  height: 120px;\r\n  \r\n  background-color: #242424;\r\n  border-radius: 10px;\r\n  border: 1px solid #2C2C2C;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".member-thumb{\r\n  max-width: 280px;\r\n  height: 120px;\r\n  \r\n  background-color: #242424;\r\n  border-radius: 10px;\r\n  border: 1px solid #2C2C2C;\r\n\r\n  display: flex;\r\n  align-items: center;\r\n\r\n  padding: 15px;\r\n\r\n  cursor: pointer;\r\n}\r\n\r\n.member-thumb-profile{\r\n  border-radius: 60px;\r\n  height: 90px;\r\n  width: 90px;\r\n\r\n  background-color: #313131;\r\n  border: 1px solid #444444;\r\n}\r\n.member-thumb-info{\r\n  margin-left: 10px;\r\n  flex: 1;\r\n}\r\n.member-thumb-name{\r\n\r\n}\r\n.member-thumb-contact{\r\n  color: #8E8E8E;\r\n  font-size: 12px;\r\n}\r\n.member-thumb-last-active{\r\n  padding: 5px 12px;\r\n  background-color: #272727;\r\n  border: 1px solid #303030;\r\n  border-radius: 8px;\r\n\r\n  font-size: 10px;\r\n  margin-top: 10px;\r\n}\r\n.member-thumb-status{\r\n  margin-top: 10px;\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
