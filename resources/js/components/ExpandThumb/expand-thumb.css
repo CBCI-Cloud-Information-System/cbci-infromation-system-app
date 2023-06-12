@@ -8,4 +8,40 @@
   border-left: 1px solid #505050;
 
   border-radius: 15px 0 0 0;
+
+  padding: 25px;
+}
+.expand-download-details-btn{
+  padding: 5px 15px;
+  background-color: #389BA7;
+  border-radius: 7px;
+}
+.expand-thumb-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expand-thumb-title{
+  font-size: 19px;
+  font-weight: bold;
+}
+.expand-thumb-details{
+  display: flex;
+  margin-top: 10px;
+}
+.expand-thumb-profile{
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+
+
+  background-color: #313131;
+  border: 1px solid #444444;
+}
+
+.expand-thumb-name{
+  font-size: 18px;
+}
+.expand-personal-details{
+  margin-left: 10px;
 }

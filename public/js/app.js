@@ -5266,9 +5266,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function ExpandThumb() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "expand-thumb"
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    className: "expand-thumb",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "expand-thumb-header",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+        className: "expand-thumb-title",
+        children: "Member Details"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "expand-download-details-btn",
+        children: "Download Details"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "expand-thumb-details",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "expand-thumb-profile"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "expand-personal-details",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+          className: "expand-thumb-name",
+          children: "Member Name"
+        })
+      })]
+    })]
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ExpandThumb);
@@ -5498,7 +5520,7 @@ function Members() {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_MemberThumb_MemberThumb__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_MemberThumb_MemberThumb__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_MemberThumb_MemberThumb__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_MemberThumb_MemberThumb__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       id: "expand-wrapper",
-      className: "expand-member-thumb-wrapper expand-hide",
+      className: "expand-member-thumb-wrapper ",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_ExpandThumb_ExpandThumb__WEBPACK_IMPORTED_MODULE_4__["default"], {})
     })]
   });
@@ -9994,7 +10016,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".menu-btn{\r\n  width: 48px;\r\n  height: 48px;\r\n\r\n  border-radius: 15px;\r\n  background-color: #F2D366;\r\n\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n\r\n  cursor: pointer;\r\n}\r\n.menu-btn-icon{\r\n  color: #212121;\r\n  font-size: 30px;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".menu-btn{\r\n  width: 48px;\r\n  height: 48px;\r\n\r\n  border-radius: 15px;\r\n  background-color: #E3B341;\r\n\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n\r\n  cursor: pointer;\r\n}\r\n.menu-btn-icon{\r\n  color: #212121;\r\n  font-size: 30px;\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10042,7 +10064,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".expand-thumb{\r\n  width: 100%;\r\n  height: 100%;\r\n\r\n  background-color: #242424;\r\n  /* border: 1px solid #505050; */\r\n  border-top: 1px solid #505050;\r\n  border-left: 1px solid #505050;\r\n\r\n  border-radius: 15px 0 0 0;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".expand-thumb{\r\n  width: 100%;\r\n  height: 100%;\r\n\r\n  background-color: #242424;\r\n  /* border: 1px solid #505050; */\r\n  border-top: 1px solid #505050;\r\n  border-left: 1px solid #505050;\r\n\r\n  border-radius: 15px 0 0 0;\r\n\r\n  padding: 25px;\r\n}\r\n.expand-download-details-btn{\r\n  padding: 5px 15px;\r\n  background-color: #389BA7;\r\n  border-radius: 7px;\r\n}\r\n.expand-thumb-header{\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.expand-thumb-title{\r\n  font-size: 19px;\r\n  font-weight: bold;\r\n}\r\n.expand-thumb-details{\r\n  display: flex;\r\n  margin-top: 10px;\r\n}\r\n.expand-thumb-profile{\r\n  width: 150px;\r\n  height: 150px;\r\n  border-radius: 200px;\r\n\r\n\r\n  background-color: #313131;\r\n  border: 1px solid #444444;\r\n}\r\n\r\n.expand-thumb-name{\r\n  font-size: 18px;\r\n}\r\n.expand-personal-details{\r\n  margin-left: 10px;\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
