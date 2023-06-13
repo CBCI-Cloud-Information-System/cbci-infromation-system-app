@@ -2,12 +2,19 @@
   width: 100%;
   height: 100%;
 
-  background-color: #242424;
+  background-color: #202223;
   /* border: 1px solid #505050; */
   border-top: 1px solid #505050;
   border-left: 1px solid #505050;
 
   border-radius: 15px 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+
 
   padding: 25px;
 }
@@ -28,6 +35,7 @@
 .expand-thumb-details{
   display: flex;
   margin-top: 10px;
+  margin-bottom: 25px;
 }
 .expand-thumb-profile{
   width: 150px;
@@ -40,8 +48,61 @@
 }
 
 .expand-thumb-name{
-  font-size: 18px;
+  font-size: 20px;
 }
 .expand-personal-details{
   margin-left: 10px;
+  flex: 1;
+}
+
+.expand-thumb-stats-wrapper{
+  display: flex;
+  margin-top: 30px;
+}
+
+.expant-thumb-stats{
+  flex: 1;
+  height: 50px;
+  background-color: #252729;
+  border-radius: 10px;
+
+  margin: 0 5px;
+}
+
+.expand-thumb-attendance-wrapper{
+  flex: 1;
+  /* max-height: 100%;
+  overflow-y: scroll; */
+  /* overflow: hidden; */
+  width: calc(100% - 18px);
+}
+
+.attendance-table{
+  margin-top: 20px;
+  
+  /* height: 100%; */
+}
+
+.gridjs-footer{
+  background-color: #212325;
+  border-top: 1px solid #28282F;
+}
+
+.gridjs-pagination .gridjs-pages button:disabled, .gridjs-pagination .gridjs-pages button[disabled], .gridjs-pagination .gridjs-pages button:hover:disabled {
+  background-color: #212325;
+  border: 1px solid #3B3B3B;
+}
+
+.gridjs-pagination .gridjs-pages button{
+  background-color: #212325;
+  border: 1px solid #3B3B3B;
+}
+.gridjs-pagination .gridjs-pages button.gridjs-spread{
+  background-color: #212325;
+  border: 1px solid #3B3B3B;
+}
+
+.gridjs-pagination .gridjs-pages button.gridjs-currentPage {
+  background-color: #212325;
+  border: 1px solid #3B3B3B;
 }
