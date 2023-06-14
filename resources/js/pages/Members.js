@@ -14,6 +14,10 @@ function Members() {
           <MemberThumb></MemberThumb>
           <MemberThumb></MemberThumb>
           <MemberThumb></MemberThumb>
+          <MemberThumb></MemberThumb>
+          <MemberThumb></MemberThumb>
+          <MemberThumb></MemberThumb>
+          <MemberThumb></MemberThumb>
         </div>
         <div id='expand-wrapper' className='expand-member-thumb-wrapper '>
           <ExpandThumb></ExpandThumb>

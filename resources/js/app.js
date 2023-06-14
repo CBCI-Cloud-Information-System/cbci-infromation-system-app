@@ -20,4 +20,5 @@ require('./components/MemberThumb/MemberThumb');
 require('./components/ExpandThumb/ExpandThumb');
 
 require('./pages/Home');
+require('./pages/Attendance');
 require('./pages/Members');
