@@ -7,32 +7,54 @@ import MenuButton from '../components/Button/MenuButton';
 import SubMenuButton from '../components/Button/SubMenuButton';
 import MemberThumb from '../components/MemberThumb/MemberThumb';
 import Members from './Members';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Attendance from './Attendance';
 
 function Home() {
     return (
         <>
+        <BrowserRouter>
           <div className='flex-cont'>
             <div className='side-menu-cont'>
               <div className='main-menu-cont'>
-                <MenuButton>
-                    group
-                </MenuButton>
+                <Link to='/home/members/'>
+                  <MenuButton style='menu-btn-selected'>group</MenuButton>
+                </Link>
+                <Link to='/home/schedule/'>
+                  <MenuButton>today</MenuButton>
+                </Link>
               </div>
               <div className='sub-menu-cont'>
                 <div className='sub-menu-title'>
                   <p>Schedule</p>
                 </div>
                 <div className='sub-menu'>
-                  <SubMenuButton>Members</SubMenuButton>
+                  <Routes>
+                    <Route path='/home/members/*' element={<SubMenuButton>Members</SubMenuButton>}/>
+                    <Route path='/home/schedule/*' element={
+                      <>
+                        <SubMenuButton>Attendance</SubMenuButton>
+                        <SubMenuButton>Calendar</SubMenuButton>
+                      </>
+                    }/>
+                  </Routes>
+                  
                 </div>
                 
               </div>
             </div>
             <div className='main-cont'>
               {/* <MemberThumb></MemberThumb> */}
-              <Members></Members>
+              
+                <Routes>
+                  <Route path='/home/members/*' element={<Members/>}/>
+                  <Route path='/home/schedule/*' element={<Attendance/>}/>
+                </Routes>
+              
+              {/* <Members></Members> */}
             </div>
           </div>
+          </BrowserRouter>
         </>
     );
 }

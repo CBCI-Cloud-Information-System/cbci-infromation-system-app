@@ -16,15 +16,17 @@ function ExpandThumb() {
     const grid = new Grid({
       columns: ['Date', 'Time', 'Event'],
       pagination: true,
-      // pagination: {
-      //   limit: 1
-      // },
+      pagination: {
+        limit: 5
+      },
       // resizable: true,
       fixedHeader: true,
-      height: tableHeight(),
+      // height: tableHeight(),
       data: [
         ['Jan 23, 2023', '12:00 pm', `${tableHeight()}px`],
         ['June 13, 2023', '11:00 am',   'Morning Service'],
+        ['Jan 23, 2023', '12:00 pm', 'Mentoring'],
+        ['Jan 23, 2023', '12:00 pm', 'Mentoring'],
         ['Jan 23, 2023', '12:00 pm', 'Mentoring'],
         ['Jan 23, 2023', '12:00 pm', 'Mentoring'],
       ],
@@ -65,9 +67,9 @@ function ExpandThumb() {
           <div className='expand-personal-details'>
             <p className='expand-thumb-name'>Member Name</p>
             <div className='expand-thumb-stats-wrapper'>
-              <ExpandStats></ExpandStats>
-              <ExpandStats></ExpandStats>
-              <ExpandStats></ExpandStats>
+              <ExpandStats label='Age' info='22'/>
+              <ExpandStats label='Contact No.' info='09xxxxxxx'/>
+              <ExpandStats label='E-mail' info='test@gmail.com'/>
             </div>
           </div>
           
@@ -92,7 +94,7 @@ function tableHeight(){
     console.log(elem.clientHeight); 
     console.log(document.querySelector(".attendance-table").clientHeight);
 
-    return elem.clientHeight - 100;
+    return elem.clientHeight - 110;
 
     // return elem.clientHeight - 100;
   }
@@ -100,9 +102,12 @@ function tableHeight(){
   
 }
 
-function ExpandStats(){
+function ExpandStats(props){
   return(
-    <div className='expant-thumb-stats'></div>
+    <div className='expant-thumb-stats'>
+      <p className='expant-thumb-stats-label'>{props.label}</p>
+      <p className='expant-thumb-stats-info'>{props.info}</p>
+    </div>
   );
 }
 

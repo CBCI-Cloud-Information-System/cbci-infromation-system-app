@@ -27,3 +27,7 @@
 .expand-hide{
   display: none;
 }
+
+#expand-wrapper{
+  padding: 10px 15px;
+}

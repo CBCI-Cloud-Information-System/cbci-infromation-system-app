@@ -3,15 +3,31 @@
   height: 48px;
 
   border-radius: 15px;
-  background-color: #E3B341;
+  /* background-color: #E3B341; */
+  border: 1px solid #323232;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  margin-bottom: 7px;
+
   cursor: pointer;
+
+  color: #878787;
+  font-size: 30px;
 }
 .menu-btn-icon{
+  /* color: #212121; */
+  color: #878787;
+  
+}
+
+.menu-btn-selected{
+  background-color: #E3B341;
+  border: none;
+}
+
+.menu-btn-selected .menu-btn-icon{
   color: #212121;
-  font-size: 30px;
 }
