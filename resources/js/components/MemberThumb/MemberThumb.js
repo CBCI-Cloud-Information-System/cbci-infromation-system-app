@@ -10,8 +10,8 @@ function MemberThumb(props) {
 
        </div>
        <div className='member-thumb-info'>
-        <p className='member-thumb-name'>Member Name</p>
-        <p className='member-thumb-contact'>09xxxxxxx</p>
+        <p className='member-thumb-name'>{props.first_name + ' ' + props.last_name}</p>
+        <p className='member-thumb-contact'>{props.contact}</p>
         <div className='member-thumb-status'>
           <span className='member-thumb-last-active'>
             Last seen: 05/23/2023
