@@ -4,8 +4,18 @@ import ReactDOM from 'react-dom';
 import "./member-thumb.css";
 
 function MemberThumb(props) {
+
+
+  const expand = () => {
+    const data = {
+      isShow: true,
+      data: props.data
+    }
+    props.setExpand(data);
+  }
+
     return (
-      <div className='member-thumb'>
+      <div className='member-thumb' onClick={expand}>
        <div className='member-thumb-profile'>
 
        </div>

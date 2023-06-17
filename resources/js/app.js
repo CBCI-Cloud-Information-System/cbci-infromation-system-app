@@ -24,3 +24,5 @@ require('./pages/Attendance');
 require('./pages/Members');
 
 require('./hooks/useMemberFetch');
+
+require('./api');

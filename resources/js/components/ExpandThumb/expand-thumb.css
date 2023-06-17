@@ -32,6 +32,14 @@
 .expand-thumb-title{
   font-size: 19px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.expand-exit-icon{
+  margin-right: 7px;
+  margin-top: -2px;
+  transform: rotateY(180deg);
+  cursor: pointer;
 }
 .expand-thumb-details{
   display: flex;
@@ -61,7 +69,10 @@
   display: flex;
   margin-top: 30px;
 }
-
+.expand-thumb-flex{
+  display: flex;
+  align-items: center;
+}
 .expant-thumb-stats{
   flex: 1;
   height: 60px;

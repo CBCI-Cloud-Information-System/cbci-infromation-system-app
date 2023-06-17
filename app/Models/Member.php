@@ -16,7 +16,8 @@ class Member extends Model
         'last_name',
         'phone',
         'email',
-        'network'
+        'network',
+        'age'
     ];
 
 }
