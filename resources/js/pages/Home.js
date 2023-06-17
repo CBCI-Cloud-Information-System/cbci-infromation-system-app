@@ -11,16 +11,20 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Attendance from './Attendance';
 
 function Home() {
+    const linkStyle = {
+      color: 'inherit', 
+      textDecoration: 'inherit'
+    }
     return (
         <>
         <BrowserRouter>
-          <div className='flex-cont'>
+          <div id='home-wrapper' className='flex-cont'>
             <div className='side-menu-cont'>
               <div className='main-menu-cont'>
-                <Link to='/home/members/'>
+                <Link style={linkStyle} to='/home/members/'>
                   <MenuButton style='menu-btn-selected'>group</MenuButton>
                 </Link>
-                <Link to='/home/schedule/'>
+                <Link style={linkStyle} to='/home/schedule/'>
                   <MenuButton>today</MenuButton>
                 </Link>
               </div>

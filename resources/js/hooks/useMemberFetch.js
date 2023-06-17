@@ -1,37 +1,33 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-
-// const axios = require('axios');
-
-const members = [];
+import API from '../api';
 
 export const useMemberFetch = () =>{
-  const [state, setState] = useState(members);
+  const [state, setState] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const fetchMember = async() => {
-    // axios.get('/api/members')
-    // .then(function (response) {
-    //   setState(response.data.members);
-    // })
-    // .catch(function (error) {
-      
-    // })
-    // .finally(function () {
-      
-    // });
+    setLoading(true);
     try {
       const response = await axios.get('/api/members');
-      setState(response.data.members);
+      setLoading(false);
+      return response;
     } catch (error) {
+      setLoading(false);
       console.error(error);
     }
   }
 
-  // fetchMember();
 
   useEffect(() => {
-    fetchMember();
-  });
+    setLoading(true);
+    API.fetchMember().then(res => {
+      setState(res.data.members);
+      setLoading(false);
+    }).catch(err => {
+      setLoading(false);
+    });
+  }, []);
 
-  return { state };
+  return { state, loading };
 }
